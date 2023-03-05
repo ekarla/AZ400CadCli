@@ -22,7 +22,7 @@ jobs:
         dotnet-version: 7.0.x
     - name: Restore dependencies - API
       run: dotnet restore
-      working-directory: src/CadCli.API
+      working-directory: src/CadCli.Api
       
     - name: Restore dependencies - Tests
       run: dotnet restore
@@ -30,7 +30,7 @@ jobs:
       
     - name: Build API
       run: dotnet build --no-restore
-      working-directory: src/CadCli.API
+      working-directory: src/CadCli.Api
       
     - name: Build Tests
       run: dotnet build --no-restore
